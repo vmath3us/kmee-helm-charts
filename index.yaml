@@ -5,10 +5,10 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.10.0
-    created: "2023-01-12T14:34:32.320989055Z"
+    created: "2023-01-12T14:49:01.937781948Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: 9cef6ad0aee2a395214d626f7075af4ae55447d7005d39c9f34025c0c196e652
+    digest: c62797d99bbcb9818ec9ff084a4ecc3d6be2ef8fa8b7447eaa23610341878649
     home: https://github.com/bitnami/charts/tree/master/bitnami/common
     icon: https://bitnami.com/downloads/logos/bitnami-mark.png
     keywords:
@@ -31,9 +31,9 @@ entries:
   etherpad:
   - apiVersion: v2
     appVersion: 1.8.1
-    created: "2023-01-12T14:34:32.321549858Z"
+    created: "2023-01-12T14:49:01.938766248Z"
     description: A Helm chart for Etherpad
-    digest: cff7025775e97083e8a2ea39fa6966beb02e412c1c38132d6ddd4f12711d9cb6
+    digest: bf908852cea5a54b3c70d6f3c77db7abe67262c245c9865b8dfcc975a4141d10
     icon: https://etherpad.org/img/brand.svg
     name: etherpad
     type: application
@@ -43,9 +43,9 @@ entries:
   guestbook:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2023-01-12T14:34:32.32177276Z"
+    created: "2023-01-12T14:49:01.939582347Z"
     description: Sample application
-    digest: 3e282f3b3cc8fdb26b31d2a78548ec2cb2a556574b6353192c9c81bcfeaa6d3a
+    digest: 0c6126781976968c6c7a05f17ac53da89180a6b85aba6f73d8f52f90e9baac4b
     name: guestbook
     urls:
     - https://kmee.github.io/kmee-helm-charts/guestbook-0.0.1.tgz
@@ -53,7 +53,7 @@ entries:
   odoo-doodba:
   - apiVersion: v2
     appVersion: "15.0"
-    created: "2023-01-12T14:34:32.333129335Z"
+    created: "2023-01-12T14:49:01.950463837Z"
     dependencies:
     - condition: postgresql.enabled,
       name: postgresql
@@ -64,7 +64,7 @@ entries:
       repository: file://../redis
       version: 15.7.x
     description: Odoo chart for Kubernetes using Tecnativa's Docker odoo base (Doodba)
-    digest: 5a6de34ad76f8f37d53ec49d649923f7df1a1956b808d631a5a264310876f406
+    digest: 2ee889bd4409157ab51e1c65b0cb6da4c6fa4feef19c42648fd9f479c1899163
     icon: https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo.png?a=b
     keywords:
     - odoo
@@ -108,14 +108,14 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.14.0
-    created: "2023-01-12T14:34:32.337799166Z"
+    created: "2023-01-12T14:49:01.955717333Z"
     dependencies:
     - name: common
       repository: file://../common
       version: 1.x.x
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
-    digest: d44bf2606a236d9649239519d8aff02d832389bad5c81c494f15b827593f047c
+    digest: a4cf37b7db762727c0ce196dd0c4d75f1048329edb857f5fa79646e85e6b4f0d
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -142,7 +142,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2023-01-12T14:34:32.3427816Z"
+    created: "2023-01-12T14:49:01.960963828Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -150,7 +150,7 @@ entries:
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
-    digest: 187de3d22983d51ce3964889718f93b489f888aa93e2004e6d5d79436be60347
+    digest: c6f7e4e68ae959321903daef8ef5be9890a9b7e304f573610abc04edcb85327a
     home: https://github.com/bitnami/charts/tree/master/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -169,4 +169,4 @@ entries:
     urls:
     - https://kmee.github.io/kmee-helm-charts/redis-15.7.6.tgz
     version: 15.7.6
-generated: "2023-01-12T14:34:32.319339344Z"
+generated: "2023-01-12T14:49:01.93627155Z"
