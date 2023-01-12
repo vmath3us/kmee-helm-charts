@@ -6,9 +6,5 @@ metadata:
 {{ include "odoo-doodba.labels" . | indent 4 }}
 data:
   {{- if .Values.config }}
-  k8s_configmap.conf: {{ tpl (toYaml .Values.config) $ | indent 2 }}
-  {{- end }}
-  # Extra Configuration
-  {{- if .Values.odoo.config }}
-  {{- toYaml .Values.odoo.config | nindent 4 }}
+  {{- toYaml .Values.config | nindent 4 }}
   {{- end }}
