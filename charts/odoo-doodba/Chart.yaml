@@ -1,0 +1,20 @@
+apiVersion: v2
+appVersion: "15.0"
+dependencies:
+- condition: postgresql.enabled,
+  name: postgresql
+  repository: file://../postgresql
+- condition: redis.enabled,
+  name: redis
+  repository: file://../redis
+description: Odoo chart for Kubernetes using Tecnativa's Docker odoo base (Doodba)
+icon: https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo.png?a=b
+keywords:
+- odoo
+- doodba
+maintainers:
+- email: pca@pledra.com
+  name: Paul Catinean
+  url: http://pledra.com
+name: odoo-doodba
+version: 2.0.1
