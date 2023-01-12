@@ -4,9 +4,11 @@ dependencies:
 - condition: postgresql.enabled,
   name: postgresql
   repository: file://../postgresql
+  version: 10.16.x
 - condition: redis.enabled,
   name: redis
   repository: file://../redis
+  version: 15.7.x
 description: Odoo chart for Kubernetes using Tecnativa's Docker odoo base (Doodba)
 icon: https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo.png?a=b
 keywords:
