@@ -52,6 +52,12 @@ securityContext: {}
 #  [queue_job]
 #  channels=root:2
 
+# Set the config values below as you would in a normal odoo.conf and these will override and/or append the existing config
+# odoo:
+#   config:
+#  LIST_DB = "true"
+
+
 # pgBouncer is a subchart that launches the pgBouncer connection pooler as a middleware regardless of the
 # postgresql db deployed (in-cluster, external standard, gcloud )
 pgBouncer:
