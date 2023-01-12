@@ -5,10 +5,10 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.10.0
-    created: "2023-01-12T14:28:35.894171389Z"
+    created: "2023-01-12T14:34:32.320989055Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: c3fd0a94748a02c933fc4e3e2be99eb3a0db91c405247bdaff60150b2a848a8c
+    digest: 9cef6ad0aee2a395214d626f7075af4ae55447d7005d39c9f34025c0c196e652
     home: https://github.com/bitnami/charts/tree/master/bitnami/common
     icon: https://bitnami.com/downloads/logos/bitnami-mark.png
     keywords:
@@ -31,9 +31,9 @@ entries:
   etherpad:
   - apiVersion: v2
     appVersion: 1.8.1
-    created: "2023-01-12T14:28:35.894995785Z"
+    created: "2023-01-12T14:34:32.321549858Z"
     description: A Helm chart for Etherpad
-    digest: 13bef65994b927a8342606b59c98c2972302bf77459706e81f6141860e5c7dee
+    digest: cff7025775e97083e8a2ea39fa6966beb02e412c1c38132d6ddd4f12711d9cb6
     icon: https://etherpad.org/img/brand.svg
     name: etherpad
     type: application
@@ -43,14 +43,40 @@ entries:
   guestbook:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2023-01-12T14:28:35.895679181Z"
+    created: "2023-01-12T14:34:32.32177276Z"
     description: Sample application
-    digest: 552e9c312704895ff38e5e1aa60f0ae2a4e2355182dceffc1813e5bdb2adca91
+    digest: 3e282f3b3cc8fdb26b31d2a78548ec2cb2a556574b6353192c9c81bcfeaa6d3a
     name: guestbook
     urls:
     - https://kmee.github.io/kmee-helm-charts/guestbook-0.0.1.tgz
     version: 0.0.1
   odoo-doodba:
+  - apiVersion: v2
+    appVersion: "15.0"
+    created: "2023-01-12T14:34:32.333129335Z"
+    dependencies:
+    - condition: postgresql.enabled,
+      name: postgresql
+      repository: file://../postgresql
+      version: 10.16.x
+    - condition: redis.enabled,
+      name: redis
+      repository: file://../redis
+      version: 15.7.x
+    description: Odoo chart for Kubernetes using Tecnativa's Docker odoo base (Doodba)
+    digest: 5a6de34ad76f8f37d53ec49d649923f7df1a1956b808d631a5a264310876f406
+    icon: https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo.png?a=b
+    keywords:
+    - odoo
+    - doodba
+    maintainers:
+    - email: pca@pledra.com
+      name: Paul Catinean
+      url: http://pledra.com
+    name: odoo-doodba
+    urls:
+    - https://kmee.github.io/kmee-helm-charts/odoo-doodba-2.0.3.tgz
+    version: 2.0.3
   - apiVersion: v2
     appVersion: "15.0"
     created: "2023-01-12T14:28:35.905632522Z"
@@ -82,14 +108,14 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.14.0
-    created: "2023-01-12T14:28:35.910665592Z"
+    created: "2023-01-12T14:34:32.337799166Z"
     dependencies:
     - name: common
       repository: file://../common
       version: 1.x.x
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
-    digest: 9fb4440b1c17fcd37026213f7cb465fe2425d74a1966fa578ccf939ec1dbe8ad
+    digest: d44bf2606a236d9649239519d8aff02d832389bad5c81c494f15b827593f047c
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -116,7 +142,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: "2023-01-12T14:28:35.915602663Z"
+    created: "2023-01-12T14:34:32.3427816Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -124,7 +150,7 @@ entries:
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
-    digest: e61f2dd27accb35fa8c125ddbe0523d00968172fe5e4bdfba1c27ce79da91ea4
+    digest: 187de3d22983d51ce3964889718f93b489f888aa93e2004e6d5d79436be60347
     home: https://github.com/bitnami/charts/tree/master/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -143,4 +169,4 @@ entries:
     urls:
     - https://kmee.github.io/kmee-helm-charts/redis-15.7.6.tgz
     version: 15.7.6
-generated: "2023-01-12T14:28:35.8924644Z"
+generated: "2023-01-12T14:34:32.319339344Z"
