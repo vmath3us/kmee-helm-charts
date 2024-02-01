@@ -125,9 +125,11 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           {{ if .Values.persistence.enabled }}
           volumeMounts:
+          {{/*
           - name: odoo-config
             mountPath: "/opt/odoo/custom/conf.d"
             readOnly: true
+          */}}
           - name: odoo
             mountPath: /var/lib/odoo
             {{ if .Values.persistence.subPath }}
